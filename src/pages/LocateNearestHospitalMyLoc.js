@@ -355,7 +355,7 @@ const LocateNearestHospitalMyLoc = () => {
                       {row.Name}
                     </TableCell>
                     {/*  TODO 3: Display the distance in the form of a whole number hint: there is predefined function for this in js*/}
-                    <TableCell>{row.distance} Km</TableCell>
+                    <TableCell>{Math.round(row.distance)} Km</TableCell>
                     <TableCell>{row.Address}</TableCell>
                   </TableRow>
                 ))}
